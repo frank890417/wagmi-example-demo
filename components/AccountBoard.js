@@ -12,9 +12,9 @@ export function AccountBoard() {
     <div>
       <h2>AccountInfo</h2>;<h4>Account: {address}</h4>
       <pre>{JSON.stringify(balance, null, 2)}</pre>
-      <h4>
+      {balance.data && <h4>
         {balance.data.formatted} {balance.data.symbol}
-      </h4>
+      </h4>}
     </div>
   );
 }
